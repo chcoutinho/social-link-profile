@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+body,
+html {
+  max-width: 1140px;
+  background-color: #141414;
+}
+
+/* Foto e informações */
+.social-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-content {
+  background-color: #202020;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.image-container {
+  background-image: url("./images/profile-pic.jpg");
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 25px;
+
+  /* Overlay */
+  background-color: rgba(0, 0, 0, 0.18);
+  background-blend-mode: color;
+}
+
+.about-me-content h3 {
+  margin-bottom: 10px;
+}
+
+.about-me-content small {
+  color: #c5f82a;
+  font-weight: 600;
+  font-size: x-small;
+}
+
+.about-me-content p {
+  font-size: 14px;
+  margin-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 60%;
+}
+
+/* Botoes */
+.links-container {
+  margin-top: 20px;
+}
+.links-container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: #333;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+
+.links-container a:hover {
+  color: #333;
+  background-color: #c5f82a;
+}
+
+.links-container a:nth-child(2),
+.links-container a:nth-child(4) {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
